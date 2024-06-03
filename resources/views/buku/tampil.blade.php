@@ -60,7 +60,7 @@
                             @if (Auth::user()->isAdmin == 1)
                                 <div class="button-area d-flex justify-content-center">
                                     <button class="btn btn-info mx-1 d-flex align-items-center justify-content-center" onclick="window.location.href='/buku/{{ $item->id }}'">
-                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-solid fa-eye"></i>
                                     </button>
                                     <button class="btn btn-warning mx-1 d-flex align-items-center justify-content-center" onclick="window.location.href='/buku/{{ $item->id }}/edit'">
                                         <i class="fa-solid fa-pencil-alt"></i>
@@ -74,7 +74,7 @@
                             @if (Auth::user()->isAdmin == 0)
                                 <div class="button-area d-flex justify-content-center">
                                     <button class="btn btn-info mx-1 d-flex align-items-center justify-content-center" onclick="window.location.href='/buku/{{ $item->id }}'">
-                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-solid fa-eye"></i>
                                     </button>
                                     <button class="btn btn-danger mx-1 d-flex align-items-center justify-content-center" onclick="window.location.href='/peminjaman/create'">
                                         <i class="fa-solid fa-book"></i>
