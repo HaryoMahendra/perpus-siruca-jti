@@ -1,4 +1,5 @@
 # Library yang digunakan :
+
 <ul>
 <li>Laravel UI</li>
 <li>Bootstrap 4</li>
@@ -11,6 +12,7 @@
 </ul>
 
 # Fitur Requirements :
+
 <ol>
 <li>Ada 2 jenis Anggota yaitu Admin dan Anggota</li>
 <li>Setiap User Harus Melakukan Login Untuk Dapat Mengakses Web</li>
@@ -29,8 +31,7 @@
 </ol>
 
 # ERD Sistem Informasi Perpustakaan :
-<img src="/public/img/erd.png">
 
+<img src="/public/img/database.png">
 
 </ul>
-
