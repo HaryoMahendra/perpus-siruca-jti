@@ -30,7 +30,7 @@
 <li>Admin dapat melihat dan mencetak riwayat peminjaman buku, sedangkan Anggota hanya dapat melihat list buku yang dipinjam olehnya</li>
 </ol>
 
-# ERD Sistem Informasi Ruang Baca :
+# Database Sistem Informasi Ruang Baca :
 
 <img src="/public/img/database.png">
 
