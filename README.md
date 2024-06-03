@@ -31,8 +31,6 @@
 # ERD Sistem Informasi Perpustakaan :
 <img src="/public/img/erd.png">
 
-# Link Youtube : 
-https://youtu.be/DrCNV7E-eKc
 
 </ul>
 
