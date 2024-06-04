@@ -9,7 +9,7 @@
 @endsection
 
 @section('judul')
-    <h2 class="text-primary">Daftar Kategori</h2>
+    <h2 class="text-primary">Daftar Kategori Buku</h2>
 @endsection
 
 @push('styles')

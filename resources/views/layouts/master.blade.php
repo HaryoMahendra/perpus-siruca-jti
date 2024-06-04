@@ -99,7 +99,7 @@
                 <div class="modal-dialog modal-dialog-centered align-items-center justify-content-center"
                     role="document">
                     <div class="modal-content">
-                        <div class="modal-header" style="background-color: #9370DB; color: white; text-align: center;">
+                        <div class="modal-header" style="background-color: #6777ef; color: white; text-align: center;">
                             <img src="{{ asset('img/logobiru.png') }}"
                                 style="width: 50px; display: block; margin: 0 auto;" alt="Logo Kelompok">
                             <h5 class="modal-title mt-2" id="kelompokModalLabel">KELOMPOK 5 | SIRUCA</h5>

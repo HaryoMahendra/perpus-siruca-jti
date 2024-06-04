@@ -135,7 +135,7 @@
                             </div>
                             <div class="row mb-0">
                                 <span class="col-md-8 mb-3 text-md-end text-dark">Sudah Punya Akun ? <a
-                                        href="{{ route('login') }}" class="p-0">login</a></span>
+                                        href="{{ route('login') }}" class="p-0">Login</a></span>
                             </div>
                             <div class="row mb-0">
                                 <div class="col-md-5 offset-md-4">
