@@ -142,12 +142,11 @@
         </div>
     </div>
 
-
     <!-- Area Chart -->
-    <div class="col-xl-8 col-lg-7">
+    <div class="col-lg-auto">
         <div class="card mb-4">
-            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Grafik Riwayat Peminjaman</h6>
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-center">
+                <h3 class="m-0 font-weight-bold text-primary">Grafik Riwayat Peminjaman Berdasarkan Tanggal</h3>
             </div>
             <div class="card-body">
                 <div class="chart-area">
