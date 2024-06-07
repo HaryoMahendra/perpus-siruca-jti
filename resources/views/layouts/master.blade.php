@@ -56,7 +56,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Are you sure you want to logout?</p>
+                                    <p>Apakah anda yakin ingin logout?</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-outline-primary"
@@ -114,7 +114,7 @@
                             <p class="text-center"><strong><i class="fas fa-chart-line"></i> Analisis:</strong> Catur
                                 Wulan Ndari</p>
                             <p class="text-center"><strong><i class="fas fa-paint-brush"></i> Designer:</strong> Galih
-                                Wahyu A.</p>
+                                Wahyu A</p>
                             <p class="text-center"><strong><i class="fas fa-laptop-code"></i> Programmer:</strong></p>
                             <p class="text-center">1. <span style="font-weight: normal;">Haryo Mahendra Jati</span>
                             </p>

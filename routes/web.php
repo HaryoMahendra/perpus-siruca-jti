@@ -49,4 +49,5 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/pengembalian', [PengembalianController::class, 'index']);
 
     Route::post('/pengembalian', [PengembalianController::class, 'pengembalian']);
+
 });

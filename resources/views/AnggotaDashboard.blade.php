@@ -85,7 +85,7 @@
 
     <div class="card bg-gradient-secondary">
         <div class="container">
-            <h3 class="text-light"> <i class="fa-solid fa-eye text-light my-3"></i> Informasi Aturan Peminjaaman
+            <h3 class="text-light"> <i class="fa-solid fa-eye text-light my-3"></i> Informasi Aturan Peminjaman
             </h3>
             <ol class=text-light>
                 <li class=text-light>Waktu peminjaman maksimal 1 minggu</li>
