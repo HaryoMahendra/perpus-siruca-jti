@@ -14,7 +14,7 @@
 
 @section('content')
     @if (Auth::user()->isAdmin == 1)
-        <a href="/buku/create" class="btn btn-info mb-3">Tambah Buku</a>
+        {{-- <a href="/buku/create" class="btn btn-info mb-3">Tambah Buku</a> --}}
     @endif
 
     <form class="navbar-search mb-3" action="/buku" method="GET">

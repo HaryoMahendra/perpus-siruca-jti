@@ -82,7 +82,6 @@
                     <h6 class="collapse-header">Transaksi</h6>
                     <a class="collapse-item" href="/peminjaman">Riwayat Peminjaman</a>
                     <a class="collapse-item" href="/peminjaman/create">Tambahkan Peminjaman</a>
-                    <a class="collapse-item" href="/pengembalian">Kembalikan Buku</a>
                 </div>
             </div>
         </li>

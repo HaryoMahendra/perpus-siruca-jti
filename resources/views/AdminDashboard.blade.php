@@ -157,7 +157,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
@@ -168,14 +167,30 @@
         }) => {
             console.log(data);
 
+            // Mengonversi tanggal ke bulan dan menggabungkan data
+            const monthlyData = {};
+            data.tanggal_pinjam.forEach((date, index) => {
+                const month = new Date(date).toLocaleString('default', {
+                    month: 'long',
+                    year: 'numeric'
+                });
+                if (!monthlyData[month]) {
+                    monthlyData[month] = 0;
+                }
+                monthlyData[month] += data.peminjaman[index];
+            });
+
+            const labels = Object.keys(monthlyData);
+            const values = Object.values(monthlyData);
+
             var ctx = document.getElementById("chartPeminjaman");
 
             var myLineChart = new Chart(ctx, {
                 type: 'line',
                 data: {
-                    labels: data.tanggal_pinjam,
+                    labels: labels,
                     datasets: [{
-                        label: "Earnings",
+                        label: "Jumlah Peminjaman",
                         lineTension: 0.3,
                         backgroundColor: "rgba(78, 115, 223, 0.5)",
                         borderColor: "rgba(78, 115, 223, 1)",
@@ -188,7 +203,7 @@
                         pointHitRadius: 10,
                         pointBorderWidth: 2,
                         fill: true,
-                        data: data.peminjaman,
+                        data: values,
                     }],
                 },
                 options: {
@@ -204,23 +219,22 @@
                     scales: {
                         xAxes: [{
                             time: {
-                                unit: 'date'
+                                unit: 'month'
                             },
                             gridLines: {
                                 display: false,
                                 drawBorder: false
                             },
                             ticks: {
-                                maxTicksLimit: 7
+                                maxTicksLimit: 12
                             }
                         }],
                         yAxes: [{
                             ticks: {
                                 maxTicksLimit: 5,
                                 padding: 10,
-                                // Include a dollar sign in the ticks
                                 callback: function(value, index, values) {
-                                    return '$' + number_format(value);
+                                    return '$' + value.toLocaleString();
                                 }
                             },
                             gridLines: {
@@ -252,12 +266,12 @@
                         callbacks: {
                             label: function(tooltipItem, chart) {
                                 var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-                                return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+                                return datasetLabel + ': $' + tooltipItem.yLabel.toLocaleString();
                             }
                         }
                     }
                 }
             });
-        })
+        });
     </script>
 @endsection

@@ -63,15 +63,18 @@ class RiwayatPinjamController extends Controller
         $request->validate(
             [
                 'users_id' => 'required',
-                'buku_id' => 'required'
+                'buku_id' => 'required',
+                'tanggal_pinjam' => 'nullable'
             ],
             [
                 'users_id.required' => 'Harap Masukan Nama Peminjam',
-                'buku_id.required' => 'Masukan Buku yang akan dipinjam'
+                'buku_id.required' => 'Masukan Buku yang akan dipinjam',
+                'tanggal_pinjam'   => 'Masukkan Tanggal Peminjaman'
+
             ]
         );
-        $request['tanggal_pinjam'] = Carbon::now()->toDateString();
-        $request['tanggal_wajib_kembali'] = Carbon::now()->addDay(7)->toDateString();
+        $request['tanggal_pinjam'] = $request->tanggal_pinjam ? $request->tanggal_pinjam : Carbon::now()->toDateString();
+        $request['tanggal_wajib_kembali'] = $request->tanggal_pinjam ? Carbon::parse($request->tanggal_pinjam)->addDay(7)->toDateString() :  Carbon::now()->addDay(7)->toDateString();
 
         $buku = Buku::findOrFail($request->buku_id)->only('status');
 

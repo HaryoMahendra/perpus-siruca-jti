@@ -33,7 +33,7 @@
 
 @section('content')
     @if (Auth::user()->isAdmin == 1)
-        <a href="/kategori/create" class="btn btn-info mb-3">Tambah Kategori</a>
+        {{-- <a href="/kategori/create" class="btn btn-info mb-3">Tambah Kategori</a> --}}
     @endif
 
     <div class="col-lg-auto">

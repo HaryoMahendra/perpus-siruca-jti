@@ -32,7 +32,7 @@
 @endpush
 
 @section('content')
-    <a href="/anggota/create" class="btn btn-info mb-3">Tambah Anggota</a>
+    {{-- <a href="/anggota/create" class="btn btn-info mb-3">Tambah Anggota</a> --}}
 
     <div class="col-lg-12">
         <div class="card mb-4">
