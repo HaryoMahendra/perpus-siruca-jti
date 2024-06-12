@@ -83,7 +83,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-outline-primary"
-                                                            data-dismiss="modal">Cancel</button>
+                                                            data-dismiss="modal">Kembali</button>
                                                         <form action="/kategori/{{ $item->id }}" method="post"
                                                             id="DeleteModal">
                                                             @csrf

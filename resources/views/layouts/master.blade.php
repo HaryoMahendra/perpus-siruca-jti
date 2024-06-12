@@ -60,11 +60,11 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-outline-primary"
-                                        data-dismiss="modal">Cancel</button>
+                                        data-dismiss="modal">Kembali</button>
                                     <a href="{{ route('logout') }}" class="btn btn-outline-danger"
                                         onclick="event.preventDefault();
                                         document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Keluar') }}
                                     </a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf

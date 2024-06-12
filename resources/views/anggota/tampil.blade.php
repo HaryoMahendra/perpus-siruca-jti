@@ -44,7 +44,7 @@
                         <tr>
                             <th scope="col">No.</th>
                             <th scope="col">Nama Anggota</th>
-                            <th scope="col">NPM</th>
+                            <th scope="col">NIM</th>
                             <th scope="col">Email</th>
                             <th scope="col">Tombol Aksi</th>
                         </tr>
@@ -79,11 +79,11 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <p>Are you sure you want to delete?</p>
+                                                        <p>Apakah kamu yakin ingin menghapus?</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-outline-primary"
-                                                            data-dismiss="modal">Cancel</button>
+                                                            data-dismiss="modal">Kembali</button>
                                                         <form action="/anggota/{{ $item->id }}" method="post">
                                                             @csrf
                                                             @method('delete')

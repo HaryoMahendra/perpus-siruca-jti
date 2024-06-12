@@ -47,7 +47,7 @@
 
                 <div class="d-flex justify-content-end mt-5">
                     <a href="/peminjaman" class="btn btn-danger">Kembali</a>
-                    <button type="submit" class="btn btn-primary mx-1 px-4">Submit</button>
+                    <button type="submit" class="btn btn-primary mx-1 px-4">Kirim</button>
                 </div>
 
 

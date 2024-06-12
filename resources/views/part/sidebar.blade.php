@@ -13,7 +13,7 @@
     </li>
     <hr class="sidebar-divider">
     <div class="sidebar-heading">
-        Features
+        FITUR
     </div>
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
