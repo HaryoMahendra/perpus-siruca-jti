@@ -88,7 +88,7 @@
                                                             id="DeleteModal">
                                                             @csrf
                                                             @method('delete')
-                                                            <input type="submit" value="delete"
+                                                            <input type="submit" value="Delete"
                                                                 class="btn btn-outline-danger">
                                                         </form>
                                                     </div>

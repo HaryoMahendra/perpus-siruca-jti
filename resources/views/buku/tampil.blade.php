@@ -103,7 +103,7 @@
                                                 @csrf
                                                 @method('delete')
                                                 <button class="btn btn-outline-danger px-4" type="submit"
-                                                    value="delete">Delete</button>
+                                                    value="Delete">Delete</button>
                                             </form>
                                         </div>
                                     </div>
