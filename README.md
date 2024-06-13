@@ -2,7 +2,7 @@
 
 ## About SIRUCA
 
-Siruca merupakan Sistem Informasi Perpustakaan yang ada di Ruang Baca Jurusan Teknologi Informasi Politeknik Negeri Malang. SIRUCA dapat memudahkan admin dalam mengelola data-data seperti data buu, data buku, dan data riwayat peminjam buku.
+Siruca merupakan Sistem Informasi Perpustakaan yang ada di Ruang Baca Jurusan Teknologi Informasi Politeknik Negeri Malang. SIRUCA dapat memudahkan admin dalam mengelola data-data seperti data buku, data buku, dan data riwayat peminjam buku.
 
 # Library yang digunakan :
 
