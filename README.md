@@ -25,7 +25,6 @@ Siruca merupakan Sistem Informasi Perpustakaan yang ada di Ruang Baca Jurusan Te
 <li>Bisa melakukan pencarian buku melalui judul buku</li>
 <li>Admin bisa melakukan CRUD di fitur data buku,kategori dan user</li>
 <li>Setiap Anggota hanya dapat meminjam maksimal 3 buku</li>
-<li>Peminjaman maksimal 7 hari. Jika pengembalian buku lebih dari waktu yang ditentukan maka akan diberikan kompen sebanyak 2 Jam</li>
 <li>Hanya Admin yang dapat melakukan pengembalian buku, jadi setiap anggota harus menghubungi admin jika ingin mengembalikan buku</li>
 <li>Admin dapat melihat list buku yang dipinjam, tetapi Anggota hanya dapat melihat list buku yang dipinjam oleh anggota itu sendiri</li>
 <li>Admin dapat melihat dan mencetak riwayat peminjaman buku</li>

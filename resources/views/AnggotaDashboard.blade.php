@@ -90,8 +90,6 @@
             <ol class=text-light>
                 <li class=text-light>Waktu peminjaman maksimal 1 minggu</li>
                 <li class=text-light>Setiap anggota hanya dapat meminjam maksimal 3 buku</li>
-                {{-- <li class=text-light>Jika pengembalian buku lebih dari waktu yang ditentukan atau buku hilang, maka akan
-                    diberikan kompen sebanyak 2 Jam.</li> --}}
                 <li class=text-light>Jika telah meminjam buku, silahkan ke tempat admin untuk melakukan konfirmasi</li>
                 
                 {{-- <li class=text-light>Jika Terlambat mengembalikan buku dan mendapat kompen, maka wajib langsung
