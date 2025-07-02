@@ -9,7 +9,7 @@
 @endsection
 
 @section('judul')
-    <h2 class="text-primary">Daftar Kategori Buku</h2>
+    <h2 class="text-primary">Daftar Arsip Surat</h2>
 @endsection
 
 @push('styles')
@@ -44,7 +44,8 @@
                     <thead class="thead-light">
                         <tr>
                             <th scope="col">No.</th>
-                            <th scope="col">Nama Kategori</th>
+                            <th scope="col">Nama Surat</th>
+                            <th scope="col">Jenis Surat</th>
                             <th scope="col">Tombol Aksi</th>
                         </tr>
                     </thead>
@@ -98,10 +99,29 @@
             </div>
             @endif
 
-            @if (Auth::user()->isAdmin == 0)
+            {{-- @if (Auth::user()->isAdmin == 0)
                 <a href="/kategori/{{ $item->id }}" class="btn-sm btn-info px-3 py-2"
                     style="text-decoration: none;color:white">Detail</a>
-            @endif
+            @endif --}}
+
+            {{-- @if (Auth::user()->isAdmin == 0)
+                <a href="/kategori/{{ $item->id }}" class="btn-sm btn-info px-3 py-2"
+                    style="text-decoration: none;color:white"><i class="fa-solid fa-eye"></i> Detail</a>
+                <a href="/kategori/{{ $item->id }}/cetak-pdf" target="_blank" class="btn-sm btn-danger px-3 py-2"
+                    style="text-decoration: none;color:white"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+            @endif --}}
+            <td>
+    <div class="d-flex gap-2">
+        <a href="/kategori/{{ $item->id }}" class="btn btn-sm btn-info px-3 py-2" style="text-decoration: none; color:white;">
+            <i class="fa-solid fa-eye"></i> Detail
+        </a>
+        <a href="/kategori/{{ $item->id }}/cetak-pdf" target="_blank" class="btn btn-sm btn-danger px-3 py-2" style="text-decoration: none; color:white;">
+            <i class="fa-solid fa-file-pdf"></i> PDF
+        </a>
+    </div>
+</td>
+
+
 
             </form>
             </td>

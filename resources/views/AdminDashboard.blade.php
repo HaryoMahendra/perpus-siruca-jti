@@ -92,7 +92,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-sm text-light font-weight-bold text-uppercase mb-1" style="font-size:.8`rem;">
-                                Riwayat Peminjamam</div>
+                                Riwayat Surat</div>
                             <div class="h5 mb-0 mr-3 font-weight-bold text-light">{{ $jumlah_riwayat }}</div>
                             <div class="button mt-2"><a href="/peminjaman" class="text-light">Lihat</a></div>
                         </div>
@@ -106,7 +106,7 @@
     </div>
 
     <!-- Table-->
-    <h1 class="text-primary"> Riwayat Peminjaman</h1>
+    <h1 class="text-primary"> Riwayat Surat</h1>
     <div class="col-lg-auto">
         <div class="card mb-4">
             <div class="table-responsive p-3">
@@ -116,11 +116,11 @@
                         <tr>
                             <th scope="col">No.</th>
                             <th scope="col">Nama</th>
-                            <th scope="col">Judul Buku</th>
-                            <th scope="col">Kode Buku</th>
-                            <th scope="col">Tanggal Pinjam</th>
-                            <th scope="col">Tanggal Wajib Pengembalian</th>
-                            <th scope="col">Tanggal Pengembalian</th>
+                            <th scope="col">Nama Surat</th>
+                            <th scope="col">Jenis Surat</th>
+                            <th scope="col">Tanggal Surat</th>
+                            {{-- <th scope="col">Tanggal Wajib Pengembalian</th>
+                            <th scope="col">Tanggal Pengembalian</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -146,7 +146,7 @@
     <div class="col-lg-auto">
         <div class="card mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-center">
-                <h3 class="m-0 font-weight-bold text-primary">Grafik Riwayat Peminjaman</h3>
+                <h3 class="m-0 font-weight-bold text-primary">Grafik Riwayat Surat</h3>
             </div>
             <div class="card-body">
                 <div class="chart-area">

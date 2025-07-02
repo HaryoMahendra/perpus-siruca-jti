@@ -9,7 +9,7 @@
 @endsection
 
 @section('judul')
-    <h1 class="text-primary">Daftar Riwayat Peminjaman</h1>
+    <h1 class="text-primary">Daftar Riwayat Surat</h1>
 @endsection
 
 

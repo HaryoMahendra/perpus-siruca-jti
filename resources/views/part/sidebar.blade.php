@@ -15,37 +15,37 @@
     <div class="sidebar-heading">
         FITUR
     </div>
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
             aria-expanded="true" aria-controls="collapseBootstrap">
             <i class="fa-solid fa-book"></i>
-            <span>Buku</span>
+            <span>Surat</span>
         </a>
         <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Buku</h6>
-                <a class="collapse-item" href="/buku">Lihat Semua Buku</a>
+                <h6 class="collapse-header">Surat</h6>
+                <a class="collapse-item" href="/buku">Lihat Semua Surat</a>
 
                 @if (Auth::user()->isAdmin == 1)
-                    <a class="collapse-item" href="/buku/create">Tambah Buku</a>
+                    <a class="collapse-item" href="/buku/create">Tambah Surat</a>
                 @endif
 
             </div>
         </div>
-    </li>
+    </li> --}}
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm"
             aria-expanded="true" aria-controls="collapseForm">
             <i class="fa-solid fa-layer-group"></i>
-            <span>Kategori</span>
+            <span>Arsip Surat</span>
         </a>
         <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Kategori</h6>
-                <a class="collapse-item" href="/kategori">Lihat Kategori</a>
+                <h6 class="collapse-header">Arsip Surat</h6>
+                <a class="collapse-item" href="/kategori">Lihat Arsip Surat</a>
 
                 @if (Auth::user()->isAdmin == 1)
-                    <a class="collapse-item" href="/kategori/create">Tambah Kategori</a>
+                    <a class="collapse-item" href="/kategori/create">Tambah Arsip Surat</a>
                 @endif
 
             </div>
@@ -69,7 +69,7 @@
         </li>
     @endif
 
-    @if (Auth::user()->isAdmin == 1)
+    {{-- @if (Auth::user()->isAdmin == 1)
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePeminjam"
                 aria-expanded="true" aria-controls="collapsePeminjam">
@@ -85,9 +85,9 @@
                 </div>
             </div>
         </li>
-    @endif
+    @endif --}}
 
-    @if (Auth::user()->isAdmin == 0)
+    {{-- @if (Auth::user()->isAdmin == 0)
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePeminjam"
                 aria-expanded="true" aria-controls="collapsePeminjam">
@@ -103,6 +103,6 @@
                 </div>
             </div>
         </li>
-    @endif
+    @endif --}}
 
 </ul>
